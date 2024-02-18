@@ -207,7 +207,7 @@ header p {
 .euro {
   font-weight: 700;
 }
-.hebergements-and-populaires {
+#hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -357,7 +357,7 @@ header p {
   .fa-info {
     font-size: 0.7em;
   }
-  .hebergements-and-populaires {
+  #hebergements-and-populaires {
     flex-direction: column;
   }
 
