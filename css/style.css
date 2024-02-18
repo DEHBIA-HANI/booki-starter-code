@@ -98,7 +98,7 @@ header p {
   padding: 12px;
 }
 .container-form input {
-  border: 1px solid var(--main-bg-color);
+  border: 0.5px solid var(--main-bg-color);
   background: white;
   text-align: center;
   font-weight: 700;
@@ -118,9 +118,9 @@ header p {
   color: white;
   border: none;
   border-radius: 0 15px 15px 0;
-  text-align: center;
-  padding-left: 13px;
+  padding-left: 15px;
 }
+
 /* ________filter_______________ */
 .container-filter {
   display: flex;
@@ -322,7 +322,7 @@ header p {
 
 /*-------------------Media queries -------------------------*/
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   h3 {
     font-size: 0.9em;
   }
@@ -388,7 +388,7 @@ header p {
     font-size: 0.9em;
   }
 }
-@media (max-width: 830px) {
+@media screen and (max-width: 830px) {
   nav ul li {
     font-size: 0.9em;
   }
@@ -406,7 +406,7 @@ header p {
   }
 }
 
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   body,
   main {
     padding: 0;
@@ -461,11 +461,15 @@ header p {
     font-size: 0em;
     visibility: hidden;
   }
+  .container-form {
+    border: 0.5px solid var(--main-bg-color);
+    border-radius: 15px;
+    width: 80%;
+  }
   .container-form button .fa-magnifying-glass {
     visibility: visible;
     color: white;
-    padding-right: 15px;
-    padding-left: 0;
+    padding: 0 15px 10px 0;
     font-size: 1.2em;
     border-radius: 20px;
   }
@@ -475,18 +479,21 @@ header p {
     border-top-left-radius: 15px;
     box-shadow: 0px 3px 4px 0px rgb(178, 176, 176);
   }
-
   .container-form input {
     border: none;
+    width: 100%;
   }
+
   .filter {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+    width: 80%;
   }
   .filter button {
     text-align: left;
+    width: 100%;
   }
 
   .hebergements-and-populaires {
@@ -546,5 +553,23 @@ header p {
     line-height: 20px;
     font-size: 0.8em;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container-form,
+  .filter {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 384px) {
+  .header-txt h1 {
+    font-size: 1.1em;
+  }
+  .filter button {
+    font-size: 0.7em;
+    padding: 11px 8px;
+  }
+  .filter button i {
+    margin-right: 0;
   }
 }
