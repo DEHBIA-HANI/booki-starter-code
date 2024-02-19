@@ -47,7 +47,7 @@ nav ul {
   justify-content: space-between;
 }
 nav li {
-  font-weight: 500;
+  font-weight: 300;
   position: relative;
 }
 
@@ -448,13 +448,13 @@ header p {
     content: "";
     width: 400%;
     height: 3px;
-    right: -40%;
+    right: -100%;
     position: absolute;
     background: var(--main-color);
     transform: translateY(34px);
   }
   nav ul li:last-child::after {
-    left: -145%;
+    left: -220%;
   }
 
   .search {
@@ -565,6 +565,11 @@ header p {
   .header-txt h1 {
     font-size: 1.1em;
   }
+
+  nav ul li:hover::after {
+    right: -40;
+  }
+
   nav ul li:last-child::after {
     left: -90%;
   }
