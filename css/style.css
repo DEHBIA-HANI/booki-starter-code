@@ -29,7 +29,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; /*mentor ?*/
+  color: inherit;
   cursor: pointer;
 }
 h3 {
@@ -47,7 +47,7 @@ nav ul {
   justify-content: space-between;
 }
 nav li {
-  font-weight: 300;
+  font-weight: 500;
   position: relative;
 }
 
@@ -257,7 +257,7 @@ header p {
   justify-content: space-between;
 }
 
-/* mentor :nth-child(2) */
+/* mentor asq on peut selectionné just la 2em card avec:nth-child(2) ,j'ai essayé mais ça n'a pas repondu*/
 .card {
   margin-bottom: 38px;
 }
@@ -329,6 +329,7 @@ header p {
   p {
     font-size: 0.9em;
   }
+  /*--------------------header-container------------*/
   .container-filter {
     flex-direction: column;
     align-items: start;
@@ -347,6 +348,8 @@ header p {
   .fa-info {
     font-size: 0.7em;
   }
+  /*--------------main-container-------------*/
+
   #hebergements-and-populaires {
     flex-direction: column;
   }
@@ -380,6 +383,7 @@ header p {
   .card:last-child {
     margin-bottom: 38px;
   }
+  /*---------footer-------------*/
 
   .footer-container {
     gap: 100px;
@@ -411,6 +415,8 @@ header p {
   main {
     padding: 0;
   }
+
+  /*----------------------header (nav)----------*/
 
   nav,
   header,
@@ -496,6 +502,8 @@ header p {
     width: 100%;
   }
 
+  /*--------------main-container-------------*/
+
   .hebergements-and-populaires {
     flex-direction: column-reverse;
   }
@@ -548,6 +556,8 @@ header p {
   .activite-container {
     margin: 0;
   }
+  /*-------------------footer-------------*/
+
   .footer-container {
     flex-direction: column;
     line-height: 20px;
@@ -567,7 +577,7 @@ header p {
   }
 
   nav ul li:hover::after {
-    right: -40;
+    right: -40%;
   }
 
   nav ul li:last-child::after {
