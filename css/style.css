@@ -424,6 +424,7 @@ header p {
   .activite {
     padding: 0 30px;
   }
+
   h3 {
     font-size: 0.9em;
   }
@@ -477,7 +478,7 @@ header p {
     color: white;
     padding: 0 15px 10px 0;
     font-size: 1.2em;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   .container-form button {
@@ -565,7 +566,7 @@ header p {
     gap: 30px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 544px) {
   .container-form,
   .filter {
     width: 100%;
