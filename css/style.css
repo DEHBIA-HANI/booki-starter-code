@@ -36,6 +36,9 @@ h3 {
   font-size: 1em;
   font-weight: 700;
 }
+button {
+  cursor: pointer;
+}
 
 nav {
   display: grid;
