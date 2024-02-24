@@ -108,8 +108,7 @@ header p {
   font-size: 0.9em;
   outline: none;
 }
-.container-form input placeholder {
-  /* mentor ,a lui poser aprés */
+.container-form input[type="search"]::placeholder {
   color: black;
 }
 
@@ -175,7 +174,7 @@ header p {
   background: white;
   padding: 5px;
   border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /*mentor ?*/
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .list img,
 .card img,
@@ -260,7 +259,6 @@ header p {
   justify-content: space-between;
 }
 
-/* mentor asq on peut selectionné just la 2em card avec:nth-child(2) ,j'ai essayé mais ça n'a pas repondu*/
 .card {
   margin-bottom: 38px;
 }
