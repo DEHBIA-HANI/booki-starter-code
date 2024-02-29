@@ -359,10 +359,7 @@ header p {
   .populaires {
     width: 100%;
   }
-  .hebergements {
-    background: white;
-    padding: 0;
-  }
+
   .populaires {
     display: flex;
     flex-direction: row;
@@ -506,7 +503,7 @@ header p {
 
   /*--------------main-container-------------*/
 
-  .hebergements-and-populaires {
+  #hebergements-and-populaires {
     flex-direction: column-reverse;
   }
   .hergements-card,
@@ -514,7 +511,10 @@ header p {
     display: block;
     align-items: center;
   }
-
+  .hebergements {
+    background: white;
+    padding: 0;
+  }
   .list {
     margin-bottom: 30px;
   }
